@@ -10,6 +10,7 @@ format:
   html:
     code-fold: false
     link-external-newwindow: true
+    toc: true
 theme:
   light: flatly
   dark: darkly
@@ -31,6 +32,25 @@ theme:
 :::
 
 # Introduction
+## Header 2 test
+### Header 3 test
+#### Header 4 test
+
+* unordered list
+    + sub-item 1
+    + sub-item 2
+        - sub-sub-item 1
+
+The $\delta^{13}C$ value ...
+
+$$
+SD = \sqrt{\frac{\sum_{i=1}^{n}{(x_i - \bar{x})^2}}{n-1}}
+$$
+
+@perkel2022
+
+[@chamberlin1897; @perkel2022]
+
 
 :::{.callout-tip}
 # Markdown exercise
