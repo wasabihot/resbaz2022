@@ -32,24 +32,6 @@ theme:
 :::
 
 # Introduction
-## Header 2 test
-### Header 3 test
-#### Header 4 test
-
-* unordered list
-    + sub-item 1
-    + sub-item 2
-        - sub-sub-item 1
-
-The $\delta^{13}C$ value ...
-
-$$
-SD = \sqrt{\frac{\sum_{i=1}^{n}{(x_i - \bar{x})^2}}{n-1}}
-$$
-
-@perkel2022
-
-[@chamberlin1897; @perkel2022]
 
 
 :::{.callout-tip}
@@ -71,6 +53,36 @@ In the template Introduction section take 3-4 minutes to write:
 
 - remove this callout and render the document and hit the :heavy_check_mark: in zoom
 :::
+
+## Header 2 test
+### Header 3 test
+#### Header 4 test
+
+* unordered list
+    + sub-item 1
+    + sub-item 2
+        - sub-sub-item 1
+
+The $\delta^{13}C$ value ...
+
+$$
+SD = \sqrt{\frac{\sum_{i=1}^{n}{(x_i - \bar{x})^2}}{n-1}}
+$$
+
+@perkel2022
+
+[@chamberlin1897; @perkel2022]
+
+*italics*, **bold**, ***bold italics***
+
+~~strikethrough~~
+
+superscript^2^ / subscript~2~
+
+`verbatim code`
+
+
+
 
 # Libraries {.unnumbered .unlisted}
 
@@ -99,6 +111,22 @@ If you want to use Python code check out the documentation [here](https://quarto
 if (!require("pacman")) install.packages("pacman", repos="http://cran.r-project.org")
 pacman::p_load(ggplot2, palmerpenguins)    # Install & load packages
 ```
+
+```{r Libraries1}
+#| output: false
+
+if (!require("pacman")) install.packages("pacman", repos="http://cran.r-project.org")
+pacman::p_load(ggplot2, palmerpenguins)    # Install & load packages
+```
+
+```{r Libraries2}
+#| eval: true
+
+if (!require("pacman")) install.packages("pacman", repos="http://cran.r-project.org")
+pacman::p_load(ggplot2, palmerpenguins)     #Install & load packages
+```
+
+
 
 # Tabsets
 

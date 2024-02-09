@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="You et al">
-<meta name="dcterms.date" content="2024-02-08">
+<meta name="dcterms.date" content="2024-02-09">
 
 <title>Your awesome project title</title>
 <style>
@@ -174,7 +174,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 8, 2024</p>
+      <p class="date">February 9, 2024</p>
     </div>
   </div>
   
@@ -210,28 +210,6 @@ YAML exercise
 </div>
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<section id="header-2-test" class="level2">
-<h2 class="anchored" data-anchor-id="header-2-test">Header 2 test</h2>
-<section id="header-3-test" class="level3">
-<h3 class="anchored" data-anchor-id="header-3-test">Header 3 test</h3>
-<section id="header-4-test" class="level4">
-<h4 class="anchored" data-anchor-id="header-4-test">Header 4 test</h4>
-<ul>
-<li>unordered list
-<ul>
-<li>sub-item 1</li>
-<li>sub-item 2
-<ul>
-<li>sub-sub-item 1</li>
-</ul></li>
-</ul></li>
-</ul>
-<p>The <span class="math inline">\(\delta^{13}C\)</span> value …</p>
-<p><span class="math display">\[
-SD = \sqrt{\frac{\sum_{i=1}^{n}{(x_i - \bar{x})^2}}{n-1}}
-\]</span></p>
-<p><span class="citation" data-cites="perkel2022">Perkel (<a href="#ref-perkel2022" role="doc-biblioref">2022</a>)</span></p>
-<p><span class="citation" data-cites="chamberlin1897 perkel2022">(<a href="#ref-chamberlin1897" role="doc-biblioref">Chamberlin 1897</a>; <a href="#ref-perkel2022" role="doc-biblioref">Perkel 2022</a>)</span></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -256,6 +234,32 @@ Markdown exercise
 </ul>
 </div>
 </div>
+<section id="header-2-test" class="level2">
+<h2 class="anchored" data-anchor-id="header-2-test">Header 2 test</h2>
+<section id="header-3-test" class="level3">
+<h3 class="anchored" data-anchor-id="header-3-test">Header 3 test</h3>
+<section id="header-4-test" class="level4">
+<h4 class="anchored" data-anchor-id="header-4-test">Header 4 test</h4>
+<ul>
+<li>unordered list
+<ul>
+<li>sub-item 1</li>
+<li>sub-item 2
+<ul>
+<li>sub-sub-item 1</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>The <span class="math inline">\(\delta^{13}C\)</span> value …</p>
+<p><span class="math display">\[
+SD = \sqrt{\frac{\sum_{i=1}^{n}{(x_i - \bar{x})^2}}{n-1}}
+\]</span></p>
+<p><span class="citation" data-cites="perkel2022">Perkel (<a href="#ref-perkel2022" role="doc-biblioref">2022</a>)</span></p>
+<p><span class="citation" data-cites="chamberlin1897 perkel2022">(<a href="#ref-chamberlin1897" role="doc-biblioref">Chamberlin 1897</a>; <a href="#ref-perkel2022" role="doc-biblioref">Perkel 2022</a>)</span></p>
+<p><em>italics</em>, <strong>bold</strong>, <strong><em>bold italics</em></strong></p>
+<p><del>strikethrough</del></p>
+<p>superscript<sup>2</sup> / subscript<sub>2</sub></p>
+<p><code>verbatim code</code></p>
 </section>
 </section>
 </section>
@@ -288,6 +292,18 @@ Code block exercise
 <pre><code>Loading required package: pacman</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(ggplot2, palmerpenguins)    <span class="co"># Install &amp; load packages</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"pacman"</span>)) <span class="fu">install.packages</span>(<span class="st">"pacman"</span>, <span class="at">repos=</span><span class="st">"http://cran.r-project.org"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(ggplot2, palmerpenguins)    <span class="co"># Install &amp; load packages</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"pacman"</span>)) <span class="fu">install.packages</span>(<span class="st">"pacman"</span>, <span class="at">repos=</span><span class="st">"http://cran.r-project.org"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(ggplot2, palmerpenguins)     <span class="co">#Install &amp; load packages</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(<span class="st">"pacman"</span>)) <span class="fu">install.packages</span>(<span class="st">"pacman"</span>, <span class="at">repos=</span><span class="st">"http://cran.r-project.org"</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(ggplot2, palmerpenguins)     <span class="co">#Install &amp; load packages</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="tabsets" class="level1">
