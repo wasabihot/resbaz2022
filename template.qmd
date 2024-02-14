@@ -142,6 +142,35 @@ pacman::p_load(ggplot2, palmerpenguins)     #Install & load packages
 - render the document and hit the :heavy_check_mark: in zoom
 :::
 
+::: {.panel-tabset}
+
+## Plot
+
+```{ojs}
+Plot.rectY(data, 
+  Plot.stackY(
+    Plot.binX( 
+      {y: "count"}, 
+      {x: "body_mass_g", fill: "species", thresholds: 20})
+    )
+  ).plot({
+    facet: {
+      data,
+      x: "sex"
+    },
+    marks: [Plot.frame()]
+  })
+```
+
+## Data
+
+```{ojs}
+Inputs.table(filtered)
+```
+
+:::
+
+
 # Images
 
 :::{.callout-tip}
