@@ -170,6 +170,28 @@ Inputs.table(filtered)
 
 :::
 
+::: {.panel-tabset}
+
+## Plot1
+```{r}
+flipper_hist <- ggplot(data = penguins, aes(x = flipper_length_mm)) +
+  geom_histogram(aes(fill = species), 
+                 alpha = 0.5, 
+                 position = "identity") +
+  scale_fill_manual(values = c("darkorange","purple","cyan4")) +
+  labs(x = "Flipper length (mm)",
+       y = "Frequency",
+       title = "Penguin flipper lengths")
+
+flipper_hist
+```
+
+## Data1
+```{r}
+rmarkdown::paged_table(penguins[1:50,])
+```
+
+:::
 
 # Images
 
